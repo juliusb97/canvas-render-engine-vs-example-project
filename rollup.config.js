@@ -13,7 +13,7 @@ export default {
 	plugins: [
 		typescript(),
 		commonjs({
-			include: ["src/index.js", "node_modules/canvas-render-engine-vs/**"]
+			include: ["src/index.js"]
 		}),
 		resolve({
 			jsnext: true,

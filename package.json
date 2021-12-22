@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
+    "build-local": "node utils/copy.js && rollup -c",
     "start": "echo 'Open ./public/index.html in your browser' && exit 1"
   },
   "keywords": [],
@@ -16,5 +17,9 @@
     "@rollup/plugin-typescript": "^8.3.0",
     "canvas-render-engine-vs": "^1.0.4",
     "rollup": "^2.61.1"
+  },
+  "dependencies": {
+    "copyfiles": "^2.4.1",
+    "rollup-plugin-copy": "^3.4.0"
   }
 }
